@@ -10,6 +10,5 @@ iptables -A INPUT -p tcp -m multiport --dport 80,443 -m string --algo bm --strin
 iptables -A INPUT -p tcp -m multiport --dport 80,443 -m string --algo bm --string "\x00" -j DROP
 iptables -A INPUT -p tcp -m multiport --dport 80,443 -m string --algo bm --string "/system_api.php" -j DROP
 iptables -A INPUT -p tcp -m multiport --dport 80,443 -m string --algo bm --string "/api/v1/time" -j DROP
-iptables -A INPUT -p tcp -m multiport --dport 80,443 -m string --algo bm --string "/api/v1/time" -j DROP
 iptables -A INPUT -p tcp -m multiport --dport 80,443 -m string --algo bm --string "|'" -j DROP
 iptables -A INPUT -p tcp -m multiport --dport 80,443 -m string --algo bm --string ".aspx" -j DROP
