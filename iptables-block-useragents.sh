@@ -1,6 +1,6 @@
 #!/bin/sh
 
-iptables -A INPUT -p tcp -m multiport --dports 80,443 -m string --algo bm --string "Sogou" -j DROP
+iptables -A INPUT -p tcp -m multiport --dports 80,443 -m string --algo bm --string "Sogou web spider" -j DROP
 iptables -A INPUT -p tcp -m multiport --dports 80,443 -m string --algo bm --string "BLEXBot" -j DROP
 iptables -A INPUT -p tcp -m multiport --dports 80,443 -m string --algo bm --string "CensysInspect/" -j DROP
 iptables -A INPUT -p tcp -m multiport --dports 80,443 -m string --algo bm --string "Barkrowler/" -j DROP
@@ -16,4 +16,3 @@ systemctl start netfilter-persistent
 
 # iptables -S
 # curl -A "Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)" -I http://example.com
-# curl: (92) HTTP/2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 1)

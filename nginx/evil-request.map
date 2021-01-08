@@ -1,0 +1,16 @@
+#/wp-login.php 1;
+#/index.php 1;
+#/wp-admin.php 1;
+
+~*/wp-content 1;
+~*/vendor/ 1;
+~*.php 1;
+~*XDEBUG_SESSION_ 1;
+~*/.env 1;
+~*\x00 1;
+~*|' 1;
+~*.aspx? 1;
+~*dns-query? 1;
+~*mstshash 1;
+/login 1;
+/owa/auth 1;
