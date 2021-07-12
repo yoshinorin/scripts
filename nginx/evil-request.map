@@ -1,7 +1,3 @@
-#/wp-login.php 1;
-#/index.php 1;
-#/wp-admin.php 1;
-
 ~*/wp-content 1;
 ~*/vendor/ 1;
 ~\.php 1;
@@ -11,5 +7,17 @@
 ~*.aspx? 1;
 ~*dns-query? 1;
 ~*mstshash 1;
+~*.tpl 1;
+~*/owa 1;
+~*/ecp 1;
+~*.svn 1;
+~*stalker_portal 1;
 /login 1;
-/owa/auth 1;
+/actuator/health 1;
+/c/version.js 1;
+
+
+# php: if can not disable .\php
+#/system_api.php 1;
+#/wp-login.php 1;
+#/wp-admin.php 1;
